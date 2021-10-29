@@ -13,7 +13,6 @@ int main(){
 	fn();
 	
 	
-	
 	/*  function pointer array  */
 	int i = 4;
 	

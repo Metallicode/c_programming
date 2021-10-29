@@ -2,17 +2,16 @@
 
 int main(){
 
-	int x = 1, y = 2, z[10];
-	z[0] = 555;
+	int x = 100;
+	//int *ip = x; 		  /* wrong */	
+	//int *ip = (int *) x;    /* wrong */	
+	int *ip = &x;             /* ok but...  */
 	
-	int *ip; 		/* ip is a pointr to int */	
-	ip = &x;	 	/* ip points to x */	
-	y = *ip; 		/* y is now 1 */	
-	*ip = 0; 		/* x is now 0 */
-
-	printf("%d\n", *ip);
+	int *ip02;
 	
-	ip = &z[0];		/* ip points to z[0] */
+	ip02 = &x; 
+	
+	*ip02 = 1;
 	
 	printf("%d\n", *ip);
 
