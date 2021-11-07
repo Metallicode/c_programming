@@ -5,6 +5,7 @@ An assemblage of parts that transmit forces, motion, and energy one to another i
 
 
 
+
 - automata / Finite State Machine (FSM).
 
 "self-acting"
