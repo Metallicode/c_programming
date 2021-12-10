@@ -1,0 +1,107 @@
+אז כדי להתחיל אנחנו נראה סקריפט פשוט שכתוב בשפת סי 
+שמדפיס אל המסך את המשפט HELLO-WORLD ונכיר את
+המבנה הכללי של תוכניות ובהמשך את התהליך הבסיסי 
+שנעשה בכדי להפוך את  הסקריפט שלנו 
+לקובץ שניתן להריץ.
+-------------------------------------------------------------------
+באופן כללי ניתן לחלק תוכנית שכתובה בשפת C באופן הבא:
+Documentations (Documentation Section)
+Preprocessor Statements (Link Section)
+Global Declarations (Definition Section)
+The main() function
+User Defined Functions
+Local Declarations
+Program Statements & Expressions
+--------------------------------------------------------------------------
+
+Preprocessing 		(-E option)
++++++++++++++++++++++++++++++++++++++
+This is the first phase through which source 
+code is passed. This phase include:  
+
+-Removal of Comments
+-Expansion of Macros
+-Expansion of the included files.
+-Conditional compilation
+The preprocessed output is stored 
+in the filename.i.
+
+
+Compilation 		(gcc -S -masm=intel t.c)
++++++++++++++++++++++++++++++++++++++
+The next step is to compile 
+filename.i and produce an 
+intermediate compiled output file filename.s. 
+This file is in assembly level instructions.
+
+
+Assembly			(gcc -c t.c)
+++++++++++++++++++++++++++++
+In this phase the filename.s 
+is taken as input and turned into 
+filename.o by assembler. 
+This file contain machine level instructions. 
+At this phase, only existing code is converted 
+into machine language, the function calls 
+like printf() are not resolved.
+
+
+
+Linking 				(gcc t.c -o file_name)
+++++++++++++++++++++++++++++++++++
+This is the final phase in which all the linking 
+of function calls with their definitions are done. 
+Linker knows where all these functions are 
+implemented. Linker does some extra work also, 
+it adds some extra code to our program which is 
+required when the program starts and ends. 
+For example, there is a code which is required 
+for setting up the environment like passing 
+command line arguments. This task can be easily 
+verified by using $size filename.o and $size filename. 
+Through these commands, we know that how output 
+file increases from an object file to an executable file. 
+This is because of the extra code that linker adds with 
+our program. 
+
+
+
+1. For a static library, the actual code is extracted 
+from the library by the linker and used to build the 
+final executable at the point you compile/build 
+your application.
+
+2. Each process gets its own copy of the code 
+and data. Where as in case of dynamic 
+libraries it is only code shared, 
+data is specific to each process. 
+For static libraries memory footprints are larger. 
+For example, if all the window system tools were 
+statically linked, several tens of megabytes 
+of RAM would be wasted for a typical user, 
+and the user would be slowed down by a lot of paging.
+
+
+========================================
+========================================
+========================================
+========================================
+
+
+when a compiled program is executed, 
+the operating system loads it into memory, 
+and starts executing the machine code, 
+which basically means pointing the CPU’s program counter 
+(a pointer to the instruction that the CPU is executing) to the start of the 
+program in the memory. The processor then runs the program’s machine code.
+
+
+------------------------------------------------------------------
+
+
+ecel application illostration
+
+
+
+
+

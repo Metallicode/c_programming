@@ -1,21 +1,21 @@
-
 #include <stdio.h>
 
+void main(){
 
-int main(){
+	float fahr, celsius;
+	int low, up, step;
 
-	int i;
-	int base, step, limit;
-	i = 0;
-	base = 0;
-	step = 5;
-	limit = 100;
+	low = 0;
+	up = 300;
+	step = 20;
 
-	while(i<=limit)
-		printf("%d\n",i+=step);
+	fahr = low;
 
-	printf("finished executing\n");
-
-
-	return 0;
+	while(fahr <= up){
+		celsius = (5.0/9.0)*(fahr-32);
+		printf("%3.0f\t%6.1f\n",fahr,celsius);
+		fahr+=step;
+	}
 }
+
+

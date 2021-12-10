@@ -1,0 +1,24 @@
+second:
+
+Preprocessing is the first pass of any C compilation. It processes include-files, 
+conditional compilation instructions and macros.
+
+Compilation is the second pass. It takes the output of the preprocessor, 
+and the source code, and generates assembler source code.
+
+Assembly is the third stage of compilation. It takes the assembly source 
+code and produces an assembly listing with offsets. The assembler output is stored in an object file.
+
+Linking is the final stage of compilation. 
+It takes one or more object files or libraries as input and combines 
+them to produce a single (usually executable) file. In doing so, 
+it resolves references to external symbols, assigns final addresses to 
+procedures/functions and variables, and revises code and data to reflect new 
+addresses (a process called relocation).
+
+
+
+
+
+
+
