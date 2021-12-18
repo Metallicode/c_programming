@@ -8,7 +8,7 @@ char chars[MAX];
 int main(){
 
 	while(counter < MAX){
-		putchar(chars[counter]+counter);	
+		putchar(counter);	
 		printf("\t%d\n", counter++);
 	}
 	printf("\nend\n");

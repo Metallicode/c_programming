@@ -44,3 +44,49 @@ int main() {
     
 	return 0;
 }
+
+
+
+/*
+E = exponent expression, simply means power(10, n) or 10 ^ n
+
+F = fraction expression, default 6 digits precision
+
+G = gerneral expression, somehow smart to show the number in a concise way (but really?)
+*/
+
+
+
+
+/*
+void main(int argc, char* argv[])  
+{  
+        double a = 4.5;
+        printf("=>>>> below is the example for printf 4.5\n");
+        printf("%%e %e\n",a);
+        printf("%%f %f\n",a);
+        printf("%%g %g\n",a);
+        printf("%%E %E\n",a);
+        printf("%%F %F\n",a);
+        printf("%%G %G\n",a);
+          
+        double b = 1.79e308;
+        printf("=>>>> below is the exbmple for printf 1.79*10^308\n");
+        printf("%%e %e\n",b);
+        printf("%%f %f\n",b);
+        printf("%%g %g\n",b);
+        printf("%%E %E\n",b);
+        printf("%%F %F\n",b);
+        printf("%%G %G\n",b);
+
+        double d = 2.25074e-308;
+        printf("=>>>> below is the example for printf 2.25074*10^-308\n");
+        printf("%%e %e\n",d);
+        printf("%%f %f\n",d);
+        printf("%%g %g\n",d);
+        printf("%%E %E\n",d);
+        printf("%%F %F\n",d);
+        printf("%%G %G\n",d);
+}
+
+*/

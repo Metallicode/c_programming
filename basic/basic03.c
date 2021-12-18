@@ -1,9 +1,11 @@
 #include <stdio.h>
 
-#define LOWER 10
-#define HIGHER 100
+#define LOW 10
+#define HIGH 100
+#define MSG "hello"
 
 int main(){
-	printf("%d\n", LOWER+HIGHER);
+
+	printf("%s\n",__DATE__);
 	return 0;
 }
