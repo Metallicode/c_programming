@@ -3,7 +3,6 @@
 #define MAX 127
 
 int counter = 0;
-char chars[MAX];
 
 int main(){
 
