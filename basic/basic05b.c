@@ -5,7 +5,7 @@
 int main(){
 
 	int x = '6';
-
+	printf("%d\n", x);
 	printf("%d\n", x-ZERO);
 	return 0;
 }
