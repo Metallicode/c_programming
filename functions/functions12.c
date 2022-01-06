@@ -18,7 +18,7 @@ int main(void)
 		printf("%d\n", i);
 	}
 	
-	int val01 = 50;gfc
+	int val01 = 50;
 	int val02 = 150;
 	
 	int bigger = max(val01, val02);

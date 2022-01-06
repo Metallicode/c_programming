@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-void changeArray(char []);
-//void changeArray(char *);
+//void changeArray(char []);
+void changeArray(char *);
 
 int main() {
     int i;
@@ -17,7 +17,7 @@ int main() {
     return 0;
 }
 
-void changeArray(char chars []){
+void changeArray(char * chars){
 
     chars[0]= 'x';
     chars[1]= 'y';
