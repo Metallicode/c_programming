@@ -10,7 +10,7 @@ void copyLine(void);
 
 int main() {
 
-    extern int current_len;
+    int current_len;
     extern int max;
     extern char longest[];
 
@@ -50,7 +50,7 @@ void copyLine(void){
     extern char current_line[], longest[MAXLINE];
 
     i =0;      
-    while( (current_line[i] = longest[i]) != '\0')
+    while( (longest[i] = current_line[i]) != '\0')
         ++i;
     
     return;

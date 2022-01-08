@@ -4,7 +4,7 @@ void bin(unsigned n);
 
 int main() {
   
-  bin(36);
+  bin(1112);
   return 0;
 }
 
